@@ -8,6 +8,25 @@ class Car : public Vehicle
 private:
 	int doors;
 public:
+	Car() : Vehicle() { // default constructor
+		manufacturer = "";
+		yearBuilt = 0;
+	}
+	Car(int doorsInfo, string manufacturerInfo, int yearInfo) { // constructor for car
+		doors = doorsInfo;
+		manufacturer = manufacturerInfo;
+		yearBuilt = yearInfo;
+	}
+	void setDoors(int doorsInfo) { // setter for doors
+		doors = doorsInfo;
+	}
+	int getDoors() { // getter for doors
+		return doors;
+	}
+	void displayInfo(int doors, int yearBuilt, string manufacturer) { // displays all information on car
+		Vehicle::displayInfo(manufacturer, yearBuilt);
+		cout << "Doors: " << doors << endl;
+	}
 };
 
 #endif

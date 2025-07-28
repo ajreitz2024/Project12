@@ -13,6 +13,10 @@ protected:
 	int yearBuilt;
 
 public:
+	Vehicle() { // default constructor
+		manufacturer = "";
+		yearBuilt = 0;
+	}
 	Vehicle(string manufacturerInfo, int yearInfo) { // constructor
 		manufacturer = manufacturerInfo;
 		yearBuilt = yearInfo;
