@@ -123,10 +123,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Car.cpp" />
     <ClCompile Include="Inheritance.cpp" />
     <ClCompile Include="Vehicle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Car.h" />
     <ClInclude Include="Vehicle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
