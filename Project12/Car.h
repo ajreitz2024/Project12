@@ -24,9 +24,9 @@ public:
 	int getDoors() { // getter for doors
 		return doors;
 	}
-	void displayInfo(int doors, int yearBuilt, string manufacturer) { // displays all information on car
+	void displayInfo() { // displays all information on car
 		Vehicle::displayInfo();
-		cout << "Doors: " << doors << endl;
+		cout << "Doors: " << getDoors() << endl;
 	}
 };
 
