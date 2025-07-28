@@ -25,7 +25,7 @@ public:
 		return towingCapacity;
 	}
 	void displayInfo(int towingCapacity, int yearBuilt, string manufacturer) { // displays all information on truck
-		Vehicle::displayInfo(manufacturer, yearBuilt);
+		Vehicle::displayInfo();
 		cout << "Towing capacity: " << towingCapacity << endl;
 	}
 };

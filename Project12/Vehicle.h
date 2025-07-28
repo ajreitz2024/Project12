@@ -33,10 +33,10 @@ public:
 	int getYear() { // getter for year built
 		return yearBuilt;
 	}
-	void displayInfo(string manufacturer, int yearBuilt) { // displays all info from class
+	void displayInfo() { // displays all info from class
 		cout << "Vehicle Information:" << endl;
-		cout << "Manufacturer: " << manufacturer << endl;
-		cout << "Year Built: " << yearBuilt << endl;
+		cout << "Manufacturer: " << getManufacturer() << endl;
+		cout << "Year Built: " << getYear() << endl;
 	}
 };
 

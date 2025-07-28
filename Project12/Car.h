@@ -25,7 +25,7 @@ public:
 		return doors;
 	}
 	void displayInfo(int doors, int yearBuilt, string manufacturer) { // displays all information on car
-		Vehicle::displayInfo(manufacturer, yearBuilt);
+		Vehicle::displayInfo();
 		cout << "Doors: " << doors << endl;
 	}
 };
