@@ -74,7 +74,7 @@ int main() {
 	cout << "Enter the manufacturer: ";
 	string manufacturerTempTruck;
 	getline(cin, manufacturerTempTruck);
-	carInput.setManufacturer(manufacturerTempTruck);
+	truckInput.setManufacturer(manufacturerTempTruck);
 	string yearTempTruck;
 	int yearTruck = 0;
 	while (yearTruck == 0) {
