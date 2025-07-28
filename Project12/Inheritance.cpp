@@ -40,6 +40,7 @@ int main() {
 	}
 	vehicleInput.setYear(year);
 	vehicleInput.displayInfo();
+	cout << endl;
 	Car carInput;
 	cout << "Car:" << endl;
 	cout << "Enter the manufacturer: ";
@@ -63,4 +64,29 @@ int main() {
 	}
 	carInput.setDoors(doorsInput);
 	carInput.displayInfo();
+	cout << endl;
+	Truck truckInput;
+	cout << "Truck:" << endl;
+	cout << "Enter the manufacturer: ";
+	string manufacturerTempTruck;
+	getline(cin, manufacturerTempTruck);
+	carInput.setManufacturer(manufacturerTempTruck);
+	string yearTempTruck;
+	int yearTruck = 0;
+	while (yearTruck == 0) {
+		cout << "Enter the year built: ";
+		getline(cin, yearTempTruck);
+		yearTruck = validateNum(yearTempTruck);
+	}
+	truckInput.setYear(yearTruck);
+	string towingCapacityTemp;
+	int towingInput = 0;
+	while (towingInput == 0) {
+		cout << "Enter the towing capacity: ";
+		getline(cin, towingCapacityTemp);
+		towingInput = validateNum(towingCapacityTemp);
+	}
+	truckInput.setTowingCapacity(towingInput);
+	truckInput.displayInfo();
+	cout << endl;
 }
