@@ -11,6 +11,7 @@ public:
 	Car() : Vehicle() { // default constructor
 		manufacturer = "";
 		yearBuilt = 0;
+		doors = 0;
 	}
 	Car(int doorsInfo, string manufacturerInfo, int yearInfo) { // constructor for car
 		doors = doorsInfo;
